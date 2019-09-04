@@ -1,6 +1,6 @@
-# [datosgobar.github.io](http://datosgobar.github.io/)
+# [datachallengeindustrila.github.io](http://datachallengeindustrila.github.io/)
 
-Repositorio con páginas públicas de comunicación sobre equipo y proyectos de la Dirección Nacional de Datos.
+Páginas públicas de comunicación sobre equipo y proyectos Data Challenge Industrial
 
 ## Levantar el server
 
