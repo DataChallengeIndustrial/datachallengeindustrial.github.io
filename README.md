@@ -1,4 +1,4 @@
-# [datachallengeindustrila.github.io](http://datachallengeindustrila.github.io/)
+# [datachallengeindustrila.github.io](http://datachallengeindustrial.github.io/)
 
 Páginas públicas de comunicación sobre equipo y proyectos Data Challenge Industrial
 
