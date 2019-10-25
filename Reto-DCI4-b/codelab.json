@@ -1,0 +1,25 @@
+{
+  "environment": "web",
+  "format": "RetoDCI4a.md",
+  "prefix": "https://storage.googleapis.com",
+  "mainga": "UA-49880327-14",
+  "updated": "2019-10-25T18:54:50-05:00",
+  "id": "Reto-DCI4-b",
+  "duration": 60,
+  "title": "Reto Data Challenge Industrial 4.0",
+  "summary": "Reto-DCI4.0",
+  "source": "RetoDCI4b.md",
+  "theme": "",
+  "status": [
+    "draft"
+  ],
+  "category": [
+    "codelab",
+    "markdown"
+  ],
+  "tags": [
+    "web"
+  ],
+  "feedback": "https://github.com/htapia/TallerPythonIntroCienciaDatos/",
+  "url": "Reto-DCI4-b"
+}
