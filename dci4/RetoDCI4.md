@@ -95,12 +95,12 @@ Duration: 0:02:00
 <img align="left" style="padding-right:10px;" src="figures/header_small.png">
 
 Positive
-: **Importante:** El Comité Organizador estará disponibles vía el grupo privado de facebook para cualquier comunicación que se requiera establecer entre los participantes y el Comité. El grupo está disponible en el siguiente enlace: 
+: **Importante:** El Comité Organizador estará disponibles vía el grupo privado de facebook para cualquier comunicación que se requiera establecer entre los participantes y el Comité. [El grupo privado Data Challenge Industrial 4.0 en Facebook puede accederse aquí.](https://www.facebook.com/groups/517979235705607)
 
 Negative
 : **Importante:** Ningún participante debe acercarse a la mesa del Comité Organizador a menos que haya sido solicitado por el Comité Organizador. Esto solo se hará vía el único canal de comunicación que es el grupo privado.
 
 
 Positive
-: **Importante:** Los datos estarán disponibles en las carpetas asignadas a cada equipo durante el proceso de inscripcion. Si tienen problemas para acceder a los datos, contacten al Comité a través del grupo privado de Facebook.
+: **Importante:** Los datos estarán disponibles en las carpetas asignadas a cada equipo durante el proceso de inscripcion. Si tienen problemas para acceder a los datos, contacten al Comité a través del [grupo privado Data Challenge Industrial 4.0 en Facebook.](https://www.facebook.com/groups/517979235705607)
 

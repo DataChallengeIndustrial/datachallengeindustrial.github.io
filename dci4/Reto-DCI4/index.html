@@ -1,0 +1,134 @@
+
+<!doctype html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#4F7DC9">
+  <meta charset="UTF-8">
+  <title>Reto Data Challenge Industrial 4.0</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://storage.googleapis.com/codelab-elements/codelab-elements.css">
+  <style>
+    .success {
+      color: #1e8e3e;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <google-codelab-analytics gaid="UA-49880327-14"></google-codelab-analytics>
+  <google-codelab codelab-gaid=""
+                  id="Reto-DCI4"
+                  title="Reto Data Challenge Industrial 4.0"
+                  environment="web"
+                  feedback-link="https://github.com/htapia/TallerPythonIntroCienciaDatos/">
+    
+      <google-codelab-step label="Introducción" duration="5">
+        <p class="image-container"><img src="img/f1cebeb191a5aa97.png"></p>
+<p>La pérdida de producto útil, o merma, se refiere a la materia procesada que por algun motivo debe deshecharse y no se incorpora al producto final. En esta ocasión tenemos un conjunto de datos que nos permite trazar la pérdida del producto a lo largo del proceso de manufactura. Esto es importante porque permite a la empresa estimar costos del producto final y mejorar la producción, entre otras cosas. La merma es un ejemplo macroscópico tangible del inevitable desgaste que ocurre en cualquier proceso natural o humano; una manifestación del proceso de transformacion de la energía.</p>
+<p>El siguiente video muestra de manera general el proceso de manufactura con el que van a trabajar en ésta ocasión. Agradecemos a la empresa que nos ha proporcionado los datos para crear el reto.</p>
+<p><img style="width: 300.00px" src="img/1c7b2e1dd27b1488.png"><a href="https://youtu.be/fFjJRKGFD6g?t=21" target="_blank">Video </a></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Descripción General del Reto" duration="3">
+        <p class="image-container"><img src="img/f1cebeb191a5aa97.png"></p>
+<p>Como parte del control de calidad de la producción, cada tres semanas se contabiliza la merma generada del proceso para asegurar que la pérdida no rebase el 2%, es decir la fracción de producto pérdido a producto total, cada tres semanas, no debe rebasar este porcentaje.</p>
+<p>El reto consiste de los siguientes apartados:</p>
+<ol type="1">
+<li>Limpieza de datos general</li>
+<li>Estadísticas descriptivas generales</li>
+<li>Estadísticas descriptivas de la pérdida de producto</li>
+<li>Modelo para la clasificación del tipo de merma</li>
+</ol>
+<p>Cada apartado contiene dos secciones con preguntas que los guiaran en el desarrollo del Reto. La primera seccion contiene preguntas que seran evaluadas y miden las competencias de su equipo en el apartado correspondiente. La segunda seccion de preguntas son preguntas adicionales que se proponen para explorar mas el contenido de los datos y potenciar su solucion.</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Descripción de los datos" duration="2">
+        <p><img src="img/f1cebeb191a5aa97.png"><br>En el proceso que estudirán hoy se considera merma a todo aquel material que forma parte del proceso pero no contribuye al producto final, incluyendo el que no puede recuperarse.</p>
+<p>Les serán proporcionados tres archivos de datos:</p>
+<ul>
+<li><code>extrusion.csv</code></li>
+<li><code>impresion.csv</code></li>
+<li><code>sellado.csv</code></li>
+</ul>
+<p>Cada uno contiene información sobre el proceso de manufactura, indicado por el nombre del archivo.</p>
+<p>En las bases de datos disponibles en los archivos listados, la merma puede estar claramente especificada como <strong>merma</strong> o puede indicarse la pérdida de producto con términos como <em>recuperacion</em> o como <em>basura</em>.</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Horario de entregables" duration="3">
+        <p class="image-container"><img src="img/f1cebeb191a5aa97.png"></p>
+<p>Los apartados se irán habilitando de acuerdo al siguiente horario:<br></p>
+<p><strong>Sabado 26</strong></p>
+<table>
+<tr></tr>
+<tr><td colspan="1" rowspan="1"><p>1. Limpieza de datos general</p>
+</td><td colspan="1" rowspan="1"><p>12:00</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>2. Estadísticas descriptivas generales</p>
+</td><td colspan="1" rowspan="1"><p>13:30</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>3. Estadísticas descriptivas de la pérdida de producto</p>
+</td><td colspan="1" rowspan="1"><p>15:30</p>
+</td></tr>
+</table>
+<p><strong>Domingo 27</strong></p>
+<table>
+<tr></tr>
+<tr><td colspan="1" rowspan="1"><p>4. Modelo para la clasificación del tipo de merma</p>
+</td><td colspan="1" rowspan="1"><p>11:30</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>Entrega de presentaciones</p>
+</td><td colspan="1" rowspan="1"><p>16:30</p>
+</td></tr>
+</table>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Entregas y evaluaciones" duration="3">
+        <p class="image-container"><img src="img/f1cebeb191a5aa97.png"></p>
+<p>La entrega de avances se debe realizar a través de la carpeta personalizada de cada equipo, la misma donde hicieron entrega de su Reto Filtro durante el proceso de inscripción. El sistema de entrega permanecerá abierto de modo que los equipos puedan entregar sus propuestas aun cuando se han abierto otros apartados.</p>
+<p>El formato de entrega es libre, pero es imperativo que se responda de manera justificada cada una de las preguntas que se van a evaluar en cada apartado. En cada entrega debe proporcionarse como mínimo lo siguiente:</p>
+<ul>
+<li>la respuesta justificada con análisis de datos de cada pregunta, y</li>
+<li>codigo ejecutable para reproducir el análisis que justifica cada respuesta.</li>
+</ul>
+<aside class="warning"><p><strong>Importante:</strong> No se aceptará como válido código que deba compilarse. El código debe ser ejecutable y reproducible por el Comité si es necesario.</p>
+</aside>
+<aside class="special"><p>Cada apartado será evaluado por el Comité Técnico y el Jurado de Expertos conforme sea recibido, tomando en cuenta el tiempo de retraso si lo hubiere</p>
+</aside>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Contacto con el Comité Organizador" duration="2">
+        <p class="image-container"><img src="img/f1cebeb191a5aa97.png"></p>
+<aside class="special"><p><strong>Importante:</strong> El Comité Organizador estará disponibles vía el grupo privado de facebook para cualquier comunicación que se requiera establecer entre los participantes y el Comité. <a href="https://www.facebook.com/groups/517979235705607" target="_blank">El grupo privado Data Challenge Industrial 4.0 en Facebook puede accederse aquí.</a></p>
+</aside>
+<aside class="warning"><p><strong>Importante:</strong> Ningún participante debe acercarse a la mesa del Comité Organizador a menos que haya sido solicitado por el Comité Organizador. Esto solo se hará vía el único canal de comunicación que es el grupo privado.</p>
+</aside>
+<aside class="special"><p><strong>Importante:</strong> Los datos estarán disponibles en las carpetas asignadas a cada equipo durante el proceso de inscripcion. Si tienen problemas para acceder a los datos, contacten al Comité a través del <a href="https://www.facebook.com/groups/517979235705607" target="_blank">grupo privado Data Challenge Industrial 4.0 en Facebook.</a></p>
+</aside>
+
+
+      </google-codelab-step>
+    
+  </google-codelab>
+
+  <script src="https://storage.googleapis.com/codelab-elements/native-shim.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/custom-elements.min.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/prettify.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/codelab-elements.js"></script>
+
+</body>
+</html>
