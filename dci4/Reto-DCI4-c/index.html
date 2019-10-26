@@ -1,45 +1,86 @@
-author: Horacio Tapia-McClung
-summary: Reto-DCI4.0
-id: Reto-DCI4-a
-categories: codelab,markdown
-environments: Web
-status: Draft
-feedback link: https://github.com/htapia/TallerPythonIntroCienciaDatos/
 
-# Reto Data Challenge Industrial 4.0
+<!doctype html>
 
-## Introducción
-Duration: 0:02:00
-<img align="left" style="padding-right:10px;" src="figures/header_small.png">
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#4F7DC9">
+  <meta charset="UTF-8">
+  <title>Reto Data Challenge Industrial 4.0</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://storage.googleapis.com/codelab-elements/codelab-elements.css">
+  <style>
+    .success {
+      color: #1e8e3e;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <google-codelab-analytics gaid="UA-49880327-14"></google-codelab-analytics>
+  <google-codelab codelab-gaid=""
+                  id="Reto-DCI4-c"
+                  title="Reto Data Challenge Industrial 4.0"
+                  environment="web"
+                  feedback-link="https://github.com/htapia/TallerPythonIntroCienciaDatos/">
+    
+      <google-codelab-step label="Introduccion" duration="2">
+        <p class="image-container"><img src="img/f1cebeb191a5aa97.png"></p>
+<h2 is-upgraded>Estadisticas descriptivas de la perdida de producto</h2>
+<p>Este apartado se enfoca en conocer mas sobre el producto que se reporta como perdida de algun tipo. Primero se busca extraer estadisticas generales de la merma, lo que requiere obtener informacion cruzada entre las bases de datos, y la despcripcion de las caracteristicas del producto que presenta merma de algun tipo.</p>
+<aside class="special"><p><strong>Importante:</strong> Para responder correctamente las respuestas de este apartado puede ser necesario limpiar y preprocesar las bases de datos para asegurar que cada valor tiene el tipo de variable correcto (texto, punto flotante, entero, fecha, etc.)</p>
+</aside>
 
-### Limpieza general de datos
 
-En este apartado evaluamos las competencias del equipo para acceder y preprocesar los datos. Las preguntas a evaluar no son exhaustivas para la limpieza de los datos.
+      </google-codelab-step>
+    
+      <google-codelab-step label="Preguntas a evaluar" duration="28">
+        <aside class="special"><p><strong>Importante:</strong> Recuerden que cada respuesta debe ser justificada plenamente y acompañada del código asociado a su respuesta.</p>
+</aside>
+<aside class="warning"><p><strong>Importante:</strong> Recuerden que no se aceptará como válido código que deba compilarse. El código debe ser ejecutable y reproducible por el Comité si es necesario.</p>
+</aside>
+<ol type="1">
+<li>Indicar que tablas y/o columnas de los datos disponibles podrian estar relacionadas con la merma o perdida del producto.</li>
+<li>Partiendo de la base de datos de <em>SELLADO</em>, identificar los productos reportados con merma [^fn] en cada parte del proceso anterior al sellado:<ol type="1">
+<li>extrusion</li>
+<li>impresion</li>
+<li>sellado</li>
+</ol>
+</li>
+<li>Para cada uno de los productos identificados en el punto anterior (es decir con reportados con merma en alguna parte del proceso), determinar que  codigos tienen asociados en las columnas <em>CLAVE SAP</em>, <em>NOMBRE DEL PEDIDO</em> y <em>N^o[Degree] DE PEDIDO</em>. Indicar cuales usar para identificar inequivocamente los mismos en cada una de las otras bases de datos.</li>
+<li>De los codigos que registran merma positiva en la base de <em>SELLADO</em>, cuantos y cuales se pueden encontrar en la base de <em>IMPRESION</em>.</li>
+<li>Que significado tiene que estos codigos coinciden entre las dos bases?</li>
+<li>De los codigos que registran merma positiva en la base de <em>SELLADO</em>, cuantos y cuales se pueden encontrar en la base de <em>EXTRUSION</em></li>
+<li>Estos codigos, internos de la empresa, identifican el producto que se manufactura. Que significado tiene que estos codigos coinciden entre las bases?</li>
+<li>Los productos que en la base de datos <em>SELLADO</em> presentan merma positiva y que tambien se encuentran en <em>EXTRUSION</em> tienen asociados, entre otros atributos, operadores y responsables <em>en ambas bases de datos</em>. Que <em>operadores</em> son los mas comunes en este subconjunto de la base de datos de <em>EXTRUSION</em>.</li>
+<li>Los productos que en la base de datos <em>SELLADO</em> presentan merma positiva y que tambien se encuentran en <em>IMPRESION</em> tienen asociados, entre otros atributos, operadores y responsables <em>en ambas bases de datos</em>. Que <em>operadores</em> son los mas comunes en este subconjunto de la base de datos de <em>IMPRESION</em>.</li>
+<li>Los productos que en la base de datos <em>SELLADO</em> presentan merma positiva y que tambien se encuentran en <em>IMPRESION</em> tienen asociados tambien tiempo: semana, turno, hora de inicio, hora final, etc. Como se reparte el producto con merma localizada en sellado que se identifica en impresion, en cada uno de estos periodos de tiempo.</li>
+<li>Los productos que en la base de datos <em>SELLADO</em> presentan merma positiva y que tambien se encuentran en <em>EXTRUSION</em> tienen asociados tambien tiempo: semana, turno, hora de inicio, hora final, etc. Como se reparte el producto con merma localizada en sellado que se identifica en extrusion, en cada uno de estos periodos de tiempo.</li>
+</ol>
+<p>[^fn]: Merma con valores positivos registrados.</p>
 
-Positive
-: **Importante:** Recuerden que cada respuesta debe ser justificada plenamente y acompañada del código asociado a su respuesta. 
 
-Negative
-: **Importante:** Recuerden que no se aceptará como válido código que deba compilarse. El código debe ser ejecutable y reproducible por el Comité si es necesario.
+      </google-codelab-step>
+    
+      <google-codelab-step label="Preguntas adicionales sugeridas" duration="30">
+        <ol type="1">
+<li>En la base de datos <em>EXTRUSION</em> el producto perdido <em>en esta parte del proceso</em> se indica como recuperado y basura. Cual es el total de producto perdido en esta parte del proceso por turno, por semana, por dia de la semana, por cada dos semanas, por mes y por trimestres. Como se distribuye a lo largo del periodo disponible en las horas del dia? [^fn1].</li>
+<li>En la base de datos <em>IMPRESION</em> el producto perdido <em>en esta parte del proceso</em> se indica como recuperado. Cual es el total de producto perdido en esta parte del proceso por turno, por semana, por dia de la semana, por cada dos semanas, por mes y por trimestres. Como se distribuye a lo largo del periodo disponible en las horas del dia? [^fn1].</li>
+</ol>
+<p>[^fn1]: Hay tres turnos de ocho horas, comenzando a las 6:00am los dias lunes y terminando a las 06:00 am los domingos.</p>
 
-## Preguntas a evaluar
-Duration: 0:28:00
 
-Positive
-: **Importante:** Recuerden que cada respuesta debe ser justificada plenamente y acompañada del código asociado a su respuesta. 
+      </google-codelab-step>
+    
+  </google-codelab>
 
-Negative
-: **Importante:** Recuerden que no se aceptará como válido código que deba compilarse. El código debe ser ejecutable y reproducible por el Comité si es necesario.
+  <script src="https://storage.googleapis.com/codelab-elements/native-shim.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/custom-elements.min.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/prettify.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/codelab-elements.js"></script>
 
-1. Corregir, si es necesario, las columnas **SEMANA** de cada base de datos de modo que los valores de numeros enteros que indican cada semana del año esten completos
-
-2. Corregir las columnas **FECHA** de cada base de datos de manera que la fecha coincida correctamente con la semana correspondiente indicada en la columna **SEMANA**
-
-3. Indicar, en cada caso, cuantos valores estaban incorrectos en los datos originales
-
-## Preguntas adicionales
-Duration: 0:00:00
-
-Positive
-: Este apartado no contiene preguntas adicionales pero si tu equipo tiene algo que sugerir, adelante! 
-
+</body>
+</html>

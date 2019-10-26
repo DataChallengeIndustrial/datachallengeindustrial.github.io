@@ -3,12 +3,12 @@
   "format": "html",
   "prefix": "https://storage.googleapis.com",
   "mainga": "UA-49880327-14",
-  "updated": "2019-10-25T18:54:50-05:00",
-  "id": "Reto-DCI4-b",
-  "duration": 60,
+  "updated": "2019-10-25T18:54:45-05:00",
+  "id": "Reto-DCI4-a",
+  "duration": 30,
   "title": "Reto Data Challenge Industrial 4.0",
   "summary": "Reto-DCI4.0",
-  "source": "RetoDCI4b.md",
+  "source": "RetoDCI4a.md",
   "theme": "",
   "status": [
     "draft"
@@ -21,5 +21,5 @@
     "web"
   ],
   "feedback": "https://github.com/htapia/TallerPythonIntroCienciaDatos/",
-  "url": "Reto-DCI4-b"
+  "url": "Reto-DCI4-a"
 }

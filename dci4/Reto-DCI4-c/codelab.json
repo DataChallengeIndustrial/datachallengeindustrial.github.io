@@ -1,6 +1,6 @@
 {
   "environment": "web",
-  "format": "RetoDCI4a.md",
+  "format": "html",
   "prefix": "https://storage.googleapis.com",
   "mainga": "UA-49880327-14",
   "updated": "2019-10-25T18:55:00-05:00",
