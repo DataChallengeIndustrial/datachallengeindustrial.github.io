@@ -30,7 +30,7 @@ Positive
 Negative
 : **Importante:** Recuerden que no se aceptará como válido código que deba compilarse. El código debe ser ejecutable y reproducible por el Comité si es necesario.
 
-1. 
+1. Crear un modelo de clasificacion del tipo de merma, extrusion, impresion y sellado, considerando las caracteristicas de trazabilidad de las ordenes.
 
 ### Preguntas adicionales sugeridas
 Duration: 0:30:00
